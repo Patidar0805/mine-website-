@@ -57,22 +57,7 @@ function updateStars() {
 const button = document.getElementById("valentinesButton");
 
 button.addEventListener("click", () => {
-  if (button.textContent === "Click Me! ❤") {
-    button.textContent = "loading...";
-    fetch("send_mail.php")
-      .then((response) => {
-        if (response.ok) {
-          button.textContent = "Check Your Email 🙃";
-        } else {
-          console.error("Failed to send email");
-          button.textContent = "Error 😞";
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        button.textContent = "Error 😞";
-      });
-  }
+  window.location.href = "mailto:himanshupatidar0805@gmail.com";
 });
 
 function drawTextWithLineBreaks(lines, x, y, fontSize, lineHeight) {
@@ -245,31 +230,6 @@ function drawText() {
 
     opacity = opacity + 0.01;
   }
- /* if (frameNumber >= 1700 && frameNumber < 2500) {
-    context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
-
-    if (window.innerWidth < 1200) {
-      drawTextWithLineBreaks(
-        [
-          " or fir mna teri notebook se tera name pta chal or fir sab details nikali teri ",
-        ],
-        canvas.width / 2,
-        canvas.height / 2 + 90,
-        fontSize,
-        lineHeight
-      );
-    } else {
-      context.fillText(
-        "  or fir mna teri notebook se tera name pta chal or fir sab details nikali teri ",
-        canvas.width / 2,
-        canvas.height / 2 + 70
-      );
-    }
-
-    secondOpacity = secondOpacity + 0.01;
-  }*/
-
-
 
   ///////////////////////////////////////////////////////////////////////////////
   //----------------------------------------------------------------------------------------------
@@ -279,26 +239,16 @@ function drawText() {
   }
   if (frameNumber > 2500 && frameNumber < 3300) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-
-    if (window.innerWidth < 2400) {
-      drawTextWithLineBreaks(
-        [
-          " Usi ke kuch dino baad merko vo date abhi bhi Yad hai 11 dec mena first time bt karne ki ",
-          "try ki tersa par tune 3 br naatak kiya m  aabi busy hu kar ke but mna meri self respect ko ",
-        ],
-        canvas.width / 2,
-        canvas.height / 2-20,
-        fontSize,
-        lineHeight
-      );
-    } else {
-      context.fillText(
-       "try ki tersa par tune 3 br naatak kiya m  aabi busy hu kar ke but mna meri self respect ko ",
-        canvas.width / 2,
-        canvas.height / 2
-      );
-    }
-
+    drawTextWithLineBreaks(
+      [
+        " Usi ke kuch dino baad merko vo date abhi bhi Yad hai 11 dec mena first time bt karne ki ",
+        "try ki tersa par tune 3 br naatak kiya m  aabi busy hu kar ke but mna meri self respect ko ",
+      ],
+      canvas.width / 2,
+      canvas.height / 2 - 20,
+      fontSize,
+      lineHeight
+    );
     opacity = opacity + 0.01;
   }
   if (frameNumber >= 2500 && frameNumber < 3300) {
@@ -377,26 +327,16 @@ function drawText() {
   }
   if (frameNumber > 3300 && frameNumber < 3700) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-
-    if (window.innerWidth < 3200) {
-      drawTextWithLineBreaks(
-        [
-          "uska baad se tu merko aachi lagne lag gyi or us k baad se maine tera pyaara sa nickname bhi rakh h",
-          "Mera maan tho bahut kiya terse bt karne ka par mera shy nature k Karan baat karne ki try nhi ki. . ",
-        ],
-        canvas.width / 2,
-        canvas.height / 2,
-        fontSize,
-        lineHeight
-      );
-    } else {
-      context.fillText(
+    drawTextWithLineBreaks(
+      [
+        "uska baad se tu merko aachi lagne lag gyi or us k baad se maine tera pyaara sa nickname bhi rakh h",
         "Mera maan tho bahut kiya terse bt karne ka par mera shy nature k Karan baat karne ki try nhi ki. . ",
-        canvas.width / 2,
-        canvas.height / 2
-      );
-    }
-
+      ],
+      canvas.width / 2,
+      canvas.height / 2,
+      fontSize,
+      lineHeight
+    );
     opacity = opacity + 0.01;
   }
 //////////////////////////////////////////////////////////
@@ -406,49 +346,29 @@ function drawText() {
   }
   if (frameNumber > 3700 && frameNumber < 4000) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-
-    if (window.innerWidth < 3500) {
-      drawTextWithLineBreaks(
-        [
-          "mera maan to tha terko propose day k din yha sab kane ko  but teri exam aane wla the tho ",
-          "Tu distrub hogi esliya mna nhi kiya  or merko  pta h yha sab padha kar tere reply kya aane or tu kya sochne ",
-        ],
-        canvas.width / 2,
-        canvas.height / 2,
-        fontSize,
-        lineHeight
-      );
-    } else {
-      context.fillText(
-        "Tu distrub hogi esliya mna nhi kiya  or merko  pta h yha sab padha kar tere reply kya aane",
-        canvas.width / 2,
-        canvas.height / 2
-      );
-    }
-
+    drawTextWithLineBreaks(
+      [
+        "mera maan to tha terko propose day k din yha sab kane ko  but teri exam aane wla the tho ",
+        "Tu distrub hogi esliya mna nhi kiya  or merko  pta h yha sab padha kar tere reply kya aane or tu kya sochne ",
+      ],
+      canvas.width / 2,
+      canvas.height / 2,
+      fontSize,
+      lineHeight
+    );
     opacity = opacity + 0.01;
   }
-  if (frameNumber >=3700 && frameNumber < 4000) {
+  if (frameNumber >= 3700 && frameNumber < 4000) {
     context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
-
-    if (window.innerWidth < 3500) {
-      drawTextWithLineBreaks(
-        [
-          "wli h but merko bas aapni genuine feelings  express karni thi  Chahe result Kuchh Bhi Hai",
-        ],
-        canvas.width / 2,
-        canvas.height / 2 + 90,
-        fontSize,
-        lineHeight
-      );
-    } else {
-      context.fillText(
-        "wla but merko bas aapni genuine feelings  express karni thi  Chahe result Kuchh Bhi Hai",
-        canvas.width / 2,
-        canvas.height / 2 + 90
-      );
-    }
-
+    drawTextWithLineBreaks(
+      [
+        "wli h but merko bas aapni genuine feelings  express karni thi  Chahe result Kuchh Bhi Hai",
+      ],
+      canvas.width / 2,
+      canvas.height / 2 + 90,
+      fontSize,
+      lineHeight
+    );
     secondOpacity = secondOpacity + 0.01;
   }
   /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -457,51 +377,30 @@ function drawText() {
   }
   if (frameNumber > 4000 && frameNumber < 4300) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-
-    if (window.innerWidth < 3900) {
-      drawTextWithLineBreaks(
-        [
-          "My intenetions are very pure. I just want you to be geninely happy",
-          " and consistently make you feel that you are loved,",
-          
-        ],
-        canvas.width / 2,
-        canvas.height / 2 -20,
-        fontSize,
-        lineHeight
-      );
-    } else {
-      context.fillText(
-        "and I can't wait to spend all the time in the world to share that love with you!",
-        canvas.width / 2,
-        canvas.height / 2 + 50
-      );
-    }
-
+    drawTextWithLineBreaks(
+      [
+        "My intentions are very pure. I just want you to be genuinely happy",
+        " and consistently make you feel that you are loved,",
+      ],
+      canvas.width / 2,
+      canvas.height / 2 - 20,
+      fontSize,
+      lineHeight
+    );
     opacity = opacity + 0.01;
   }
   if (frameNumber >= 4000 && frameNumber < 4300) {
     context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
-
-    if (window.innerWidth < 4000) {
-      drawTextWithLineBreaks(
-        [
-          "I know that I am not perfect but trust me I will do the best I can for you",
-          " and I will never give up on you",
-        ],
-        canvas.width / 2,
-        canvas.height / 2 + 50,
-        fontSize,
-        lineHeight
-      );
-    } else {
-      context.fillText(
-        "side m rakh kr last time try ki thi bt karne or aapne  5min  bt ki thi, i known vo ",
-        canvas.width / 2,
-        canvas.height / 2 + 90
-      );
-    }
-
+    drawTextWithLineBreaks(
+      [
+        "I know that I am not perfect but trust me I will do the best I can for you",
+        " and I will never give up on you",
+      ],
+      canvas.width / 2,
+      canvas.height / 2 + 50,
+      fontSize,
+      lineHeight
+    );
     secondOpacity = secondOpacity + 0.01;
   }
 
@@ -513,55 +412,33 @@ function drawText() {
   }
   if (frameNumber > 4300 && frameNumber < 99999) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-
-    if (window.innerWidth < 3900) {
-      drawTextWithLineBreaks(
-        [
-          "but  i can't  wait  to spend all the time  in the world to share with you ",
-          "the world to share that love with you",
-        ],
-        canvas.width / 2,
-        canvas.height / 2 + 20,
-        fontSize,
-        lineHeight
-      );
-    } else {
-      context.fillText(
-        "and I can't wait to spend all the time in the world to share that love with you!",
-        canvas.width / 2,
-        canvas.height / 2 + 50
-      );
-    }
-
-    opacity = opacity + 0.01;
-  }
- //---------------------------------------------------------------------------------------------------------*
- if (frameNumber >= 4500 && frameNumber < 99999) {
-  context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
-
-  if (window.innerWidth < 4500) {
     drawTextWithLineBreaks(
       [
-        "I like you so much ", 
-       " Will you be mine  ?",
+        "but  i can't  wait  to spend all the time  in the world to share with you ",
+        "the world to share that love with you",
+      ],
+      canvas.width / 2,
+      canvas.height / 2 + 20,
+      fontSize,
+      lineHeight
+    );
+    opacity = opacity + 0.01;
+  }
+  if (frameNumber >= 4500 && frameNumber < 99999) {
+    context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
+    drawTextWithLineBreaks(
+      [
+        "I like you so much ",
+        " Will you be mine  ?",
       ],
       canvas.width / 2,
       canvas.height / 2 + 90,
       fontSize,
       lineHeight
     );
-  } else {
-    context.fillText(
-      "I like you so much Will you be mine?",
-      canvas.width / 2,
-      canvas.height / 2 + 50
-    );
+    secondOpacity = secondOpacity + 0.01;
+    button.style.display = "block";
   }
-
-  secondOpacity = secondOpacity + 0.01;
-
-  button.style.display = "block";
-}
 }
 function draw() {
   context.putImageData(baseFrame, 0, 0);
